@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_pub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:onClick="btn_pubClick"
+                android:text="Pub"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:onClick="btn_subClick"
+                android:text="Sub"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btn_unsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:onClick="btn_unsubClick"
+                android:text="UnSub"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btn_udp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:onClick="btn_udpClick"
+                android:text="Send UDP"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
